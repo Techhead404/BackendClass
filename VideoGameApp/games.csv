@@ -1,0 +1,10 @@
+game_id, title, console, price, image_name
+1, "Super Mario Bros", "NES", 29.99, "super_mario_bros.jpg"
+2, "Super Mario Bros 2", "NES", 29.99, "super_mario_bros_2.jpg"
+3, "Super Mario Bros 3", "NES", 29.99, "super_mario_bros_3.jpg"
+4, "Super Mario World", "SNES", 29.99, "super_mario_world.jpg"
+5, "Super Mario World 2: Yoshi's Island", "SNES", 29.99, "super_mario_world_2.jpg"
+6, "Super Mario 64", "N64", 29.99, "super_mario_64.jpg"
+7, "Super Mario Sunshine", "Gamecube", 29.99, "super_mario_sunshine.jpg"
+8, "Super Mario Galaxy", "Wii", 29.99, "super_mario_galaxy.jpg"
+9, "Super Mario Galaxy 2", "Wii", 29.99, "super_mario_galaxy_2.jpg"

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Jokes</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <a href="register.php">Register For API</a>
+    <h1>Coding Jokes Home page</h1>
+    <div id="joke"></div>
+    <button onclick="getJokes()">Get Jokes</button>
+    <script>
+        // Function to fetch stock data and update the DOM
+        function getJokes() {
+            axios.get('./jokeapi.php?id=1&key=abcd1234')  // Adjust the URL as necessary
+                .then(function (response) {
+                    const jokes = response.data;
+                    let html = '<ul>';
+                    jokes.forEach(joke => {
+                        html += `<li>${joke.Joke}: ${joke.Answer}</li>`;
+                    });
+
+                    html += '</ul>';
+                    document.getElementById('joke').innerHTML = html;
+                })
+                .catch(function (error) {
+                    console.log(error);
+                });
+        }
+
+
+    </script>
+</body>
+
+</html>
